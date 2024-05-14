@@ -212,15 +212,47 @@ const carsData = [
     makes_id: 7,
   },
   {
-    car_name: 'Vantage',
+    car_name: 'G-Class',
     makes_name: 'Mercedes-Benz',
     price: 1599.99,
     stock: 3,
     makes_id: 8,
   },
   {
-    
-  }
+    car_name: 'GLS',
+    makes_name: 'Mercedes-Benz',
+    price: 1599.99,
+    stock: 3,
+    makes_id: 8,
+  },  
+  {
+    car_name: 'Maybach',
+    makes_name: 'Mercedes-Benz',
+    price: 1599.99,
+    stock: 3,
+    makes_id: 8,
+  },  
+  {
+    car_name: 'S Class',
+    makes_name: 'Mercedes-Benz',
+    price: 1599.99,
+    stock: 3,
+    makes_id: 8,
+  },  
+  {
+    car_name: 'AMG GT',
+    makes_name: 'Mercedes-Benz',
+    price: 1599.99,
+    stock: 3,
+    makes_id: 8,
+  },
+  {
+    car_name: 'Vantage',
+    makes_name: 'Mercedes-Benz',
+    price: 1599.99,
+    stock: 3,
+    makes_id: 8,
+  },
   
 
  
