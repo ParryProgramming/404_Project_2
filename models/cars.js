@@ -35,22 +35,18 @@ Cars.init(
         isDecimal: true,
       },
     },
+  color: {
+    type: DataTypes.STRING,
+    allowNull: false,
+
+  },
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: 10,
       validate: {
         isNumeric: true,
       },
-    },
-    car_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'makes',
-        key: 'id',
-        unique: false,
-      },      
-    }, 
+    },  
   },
   {
     sequelize,

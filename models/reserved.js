@@ -36,7 +36,6 @@ Reserved.init(
     },
     reserved: {
         type: DataTypes.BOOLEAN,
-        allowNull: false,
         defaultValue: false,
     },
     makes_id: {
