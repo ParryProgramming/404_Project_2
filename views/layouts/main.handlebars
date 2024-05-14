@@ -4,36 +4,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechBlog</title>
-  <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Summit Luxury Car Rentals</title>
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">TechBlog</a>
-      </h1>
-      <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/profile">Profile</a> |
-        <button class="no-button" id="logout">Logout</button>
-        {{else}}
-        <a href="/login">Login</a>
-        {{/if}}
-      </nav>
-    </header>
-    <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
-      {{{ body }}}
-    </main>
-    <footer>
-      
-    </footer>
-  </div>
+  <nav>
+    <div class="title-png">
+      <h1 href="./index.html">Summit</h1> <img href="./index.html" src="./assets/images/summit-logo.png" alt="">
+    </div>
+    <div class="nav-links">
+      <a href="">Our Fleet</a>
+      <a href="#" data-bs-target="#reservationModal" data-bs-toggle="modal">Reserve your Ride</a>
+      <a href="">About Us</a>
+      {{#if logged_in}}
+      <a href="./profile">Profile</a>
+      {{else}}
+      <a href="#" data-bs-target="#loginModal" data-bs-toggle="modal">Login/Sign up</a>
+      {{/if}}
+    </div>
+  </nav>
+ {{{body}}}
+  {{!-- modals  --}}
+
+   <!-- login/sign up modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Log in or Sign up</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="login-form">
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="password">Password:</label><br>
+                    <input type="text" id="password" name="password">
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Reservation Modal -->
+      <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Reserve your Ride</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="login-form">
+                    <label for="start">Start Date</label><br>
+                    <input type="date" id="start" name="start"><br>
+                    <label for="end">End Date</label><br>
+                    <input type="date" id="end" name="end">
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Reserve Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
