@@ -1,15 +1,28 @@
 const router = require('express').Router();
-const { Project } = require('../../models');
+const { Cars } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+router.get('/', withAuth, async (req, res) => {
+  try {
+    const carsData = await Makes.findAll({
+      where: {
+        user_id: req.session.user_id,
+      },
+    });
+
+    res.status(200).json(carsData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 router.post('/', withAuth, async (req, res) => {
   try {
-    const newProject = await Project.create({
+    const newCars = await Cars.create({
       ...req.body,
       user_id: req.session.user_id,
     });
 
-    res.status(200).json(newProject);
+    res.status(200).json(newCars);
   } catch (err) {
     res.status(400).json(err);
   }

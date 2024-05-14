@@ -4,10 +4,10 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Initialize Product model (table) by extending off Sequelize's Model class
-class Cars extends Model {}
+class Rental extends Model {}
 
 // set up fields and rules for Product model
-Cars.init(
+Rental.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -15,41 +15,29 @@ Cars.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    car_name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    makes_name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    price: {
-      type: DataTypes.DECIMAL,
-      allowNull: false,
-      validate: {
-        isDecimal: true,
-      },
-    },
-  color: {
-    type: DataTypes.STRING,
-    allowNull: false,
-
-  },
-    stock: {
+    car_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        isNumeric: true,
-      },
-    },  
+      references: {
+        model: 'user',
+        key: 'id',
+        unique: false,
+      },      
+    },
+    user_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'user',
+          key: 'id',
+          unique: false,
+        },      
+      }, 
   },
   {
     sequelize,
-    timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'cars',
+    modelName: 'rental',
   }
 );
 
-module.exports = Cars;
+module.exports = Rental;
