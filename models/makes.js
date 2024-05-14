@@ -16,6 +16,14 @@ Makes.init(
       type: DataTypes.STRING,
       allowNull: false,        
     },
+    car_id: {
+      type:DataTypes.INTEGER,
+      allowNull: false,
+      through: {
+        model: "cars",
+        key: "id"
+      },
+    }
   },
   {
     sequelize,
