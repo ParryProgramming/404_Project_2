@@ -7,7 +7,7 @@ const carsData = [
     price: 349.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/lamborghiniHuracan.jpg",
+    image_url: "/images/fleetImages/lamborghiniHuracan.jpg",
   },
   {
     car_name: 'Urus',
@@ -15,7 +15,7 @@ const carsData = [
     price: 14.99,
     color: 'green',
     stock: 2,
-    image_url: "./fleetImages/lamborghiniUrus.jpg",
+    image_url: "/images/fleetImages/lamborghiniUrus.jpg",
   },
   {
     car_name: 'Revuelto',
@@ -23,7 +23,7 @@ const carsData = [
     price: 14.99,
     color: 'gold',
     stock: 3,
-    image_url: "./fleetImages/lamborghiniRevuelto.jpg",
+    image_url: "/images/fleetImages/lamborghiniRevuelto.jpg",
   },
   {
     car_name: 'Gallardo',
@@ -31,7 +31,7 @@ const carsData = [
     price: 14.99,
     color: 'green',
     stock: 3,
-    image_url: "./fleetImages/lamborghiniGallardo.jpg",
+    image_url: "/images/fleetImages/lamborghiniGallardo.jpg",
   },
   {
     car_name: 'Murcielago',
@@ -39,7 +39,7 @@ const carsData = [
     price: 14.99,
     color: 'yellow',
     stock: 3,
-    image_url: "./fleetImages/lamborghiniMurcielago.jpg",
+    image_url: "/images/fleetImages/lamborghiniMurcielago.jpg",
   },
   {
     car_name: 'SF90',
@@ -47,7 +47,7 @@ const carsData = [
     price: 14.99,
     color: 'red',
     stock: 3,
-    image_url: "./fleetImages/ferrariSF90.jpg",
+    image_url: "/images/fleetImages/ferrariSF90.jpg",
   },
   {
     car_name: '296GTB',
@@ -55,7 +55,7 @@ const carsData = [
     price: 14.99,
     color: 'red',
     stock: 3,
-    image_url: "./fleetImages/ferrari296GTB.jpg",
+    image_url: "/images/fleetImages/ferrari296GTB.jpg",
   },
   {
     car_name: '12Cilindri',
@@ -63,7 +63,7 @@ const carsData = [
     price: 14.99,
     color: 'red',
     stock: 3,
-    image_url: "./fleetImages/ferrari12Cilindri.jpg",
+    image_url: "/images/fleetImages/ferrari12Cilindri.jpg",
   },
   {
     car_name: 'Purosangue',
@@ -71,7 +71,7 @@ const carsData = [
     price: 14.99,
     color: 'red',
     stock: 3,
-    image_url: "./fleetImages/ferrariPurosangue.jpg",
+    image_url: "/images/fleetImages/ferrariPurosangue.jpg",
   },
   {
     car_name: 'Roma',
@@ -79,7 +79,7 @@ const carsData = [
     price: 14.99,
     color: 'red',
     stock: 3,
-    image_url: "./fleetImages/ferrariRoma.jpg",
+    image_url: "/images/fleetImages/ferrariRoma.jpg",
   },
   {
     car_name: 'Bentayga',
@@ -87,7 +87,7 @@ const carsData = [
     price: 14.99,
     color: 'silver',
     stock: 3,
-    image_url: "./fleetImages/bentleyBentayga.jpg",
+    image_url: "/images/fleetImages/bentleyBentayga.jpg",
   },
   {
     car_name: 'Continental',
@@ -95,7 +95,7 @@ const carsData = [
     price: 14.99,
     color: 'gun metal',
     stock: 3,
-    image_url: "./fleetImages/bentleyContinental.jpg",
+    image_url: "/images/fleetImages/bentleyContinental.jpg",
   },
   {
     car_name: 'Flying Spur',
@@ -103,7 +103,7 @@ const carsData = [
     price: 14.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/bentleyFlyingSpur.jpg",
+    image_url: "/images/fleetImages/bentleyFlyingSpur.jpg",
   },
   {
     car_name: 'Continental GT Convertible',
@@ -111,7 +111,7 @@ const carsData = [
     price: 14.99,
     color: 'white',
     stock: 3,
-    image_url: "./fleetImages/bentleyContinentalGT.jpg",
+    image_url: "/images/fleetImages/bentleyContinentalGT.jpg",
   },
   {
     car_name: 'Continental GT Coupe',
@@ -119,7 +119,7 @@ const carsData = [
     price: 14.99,
     color: 'blue',
     stock: 3,
-    image_url: "./fleetImages/bentleyGTcoupe.jpg",
+    image_url: "/images/fleetImages/bentleyGTcoupe.jpg",
   },
   {
     car_name: 'Phantom',
@@ -127,7 +127,7 @@ const carsData = [
     price: 14.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/roycePhantom.jpg",
+    image_url: "/images/fleetImages/roycePhantom.jpg",
   },
   {
     car_name: 'Cullinan',
@@ -135,7 +135,7 @@ const carsData = [
     price: 14.99,
     color: 'silver',
     stock: 3,
-    image_url: "./fleetImages/royceCullinan.jpg",
+    image_url: "/images/fleetImages/royceCullinan.jpg",
   },
   {
     car_name: 'Ghost',
@@ -143,7 +143,7 @@ const carsData = [
     price: 14.99,
     color: 'gray',
     stock: 3,
-    image_url: "./fleetImages/royceGhost.jpg",
+    image_url: "/images/fleetImages/royceGhost.jpg",
   },
   {
     car_name: 'Spectre',
@@ -151,7 +151,7 @@ const carsData = [
     price: 14.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/royceSpectre.jpg",
+    image_url: "/images/fleetImages/royceSpectre.jpg",
   },
   {
     car_name: 'Ghost Black Badge',
@@ -159,7 +159,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/royceBlackBadge.jpg",
+    image_url: "/images/fleetImages/royceBlackBadge.jpg",
   },
   {
     car_name: 'F-Pace',
@@ -167,7 +167,7 @@ const carsData = [
     price: 1399.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/jaguarFPace.jpg",
+    image_url: "/images/fleetImages/jaguarFPace.jpg",
   },
   {
     car_name: 'E-Pace',
@@ -175,7 +175,7 @@ const carsData = [
     price: 1299.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/jaguarEPace.jpg",
+    image_url: "/images/fleetImages/jaguarEPace.jpg",
   },
   {
     car_name: 'F-Type',
@@ -183,7 +183,7 @@ const carsData = [
     price: 1399.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/jaguarFType.jpg",
+    image_url: "/images/fleetImages/jaguarFType.jpg",
   },
   {
     car_name: 'XF',
@@ -191,7 +191,7 @@ const carsData = [
     price: 1499.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/jaguarXF.jpg",
+    image_url: "/images/fleetImages/jaguarXF.jpg",
   },
   {
     car_name: 'F-Type Convertible',
@@ -199,7 +199,7 @@ const carsData = [
     price: 1399.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/jaguarFTypeConvertible.jpg",
+    image_url: "/images/fleetImages/jaguarFTypeConvertible.jpg",
   },
   {
     car_name: 'Vantage',
@@ -207,7 +207,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/amVantage.jpg",
+    image_url: "/images/fleetImages/amVantage.jpg",
   },
   {
     car_name: 'DBX',
@@ -215,7 +215,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/amDBX.jpg",
+    image_url: "/images/fleetImages/amDBX.jpg",
   },
   {
     car_name: 'DB12',
@@ -223,7 +223,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/amDB12.jpg",
+    image_url: "/images/fleetImages/amDB12.jpg",
   },
   {
     car_name: 'DBS',
@@ -231,7 +231,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/amDBS.jpg",
+    image_url: "/images/fleetImages/amDBS.jpg",
   },
   {
     car_name: 'Valour',
@@ -239,7 +239,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/amValour.jpg",
+    image_url: "/images/fleetImages/amValour.jpg",
   },
   {
     car_name: 'G-Class',
@@ -247,7 +247,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/mercedesGClass.jpg",
+    image_url: "/images/fleetImages/mercedesGClass.jpg",
   },
   {
     car_name: 'GLS',
@@ -255,7 +255,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/mercedesMaybach.jpg",
+    image_url: "/images/fleetImages/mercedesMaybach.jpg",
   },
   {
     car_name: 'Maybach',
@@ -263,7 +263,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/mercedesSClass.jpg",
+    image_url: "/images/fleetImages/mercedesSClass.jpg",
   },
   {
     car_name: 'S Class',
@@ -271,7 +271,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/mercedesAMGGT.jpg",
+    image_url: "/images/fleetImages/mercedesAMGGT.jpg",
   },
   {
     car_name: 'AMG GT',
@@ -279,7 +279,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/mercedesAMGGT.jpg",
+    image_url: "/images/fleetImages/mercedesAMGGT.jpg",
   },
   {
     car_name: 'X7',
@@ -287,7 +287,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/bmwX7.jpg",
+    image_url: "/images/fleetImages/bmwX7.jpg",
   },
   {
     car_name: '750i',
@@ -295,7 +295,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/bmw750i.jpg",
+    image_url: "/images/fleetImages/bmw750i.jpg",
   },
   {
     car_name: 'M3',
@@ -303,7 +303,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/bmwM3.jpg",
+    image_url: "/images/fleetImages/bmwM3.jpg",
   },
   {
     car_name: 'i8',
@@ -311,7 +311,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/bmwi8.jpg",
+    image_url: "/images/fleetImages/bmwi8.jpg",
   },
   {
     car_name: 'M5',
@@ -319,7 +319,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/bmwM5.jpg",
+    image_url: "/images/fleetImages/bmwM5.jpg",
   },
   {
     car_name: 'Z4',
@@ -327,7 +327,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/bmwZ4.jpg",
+    image_url: "/images/fleetImages/bmwZ4.jpg",
   },
   {
     car_name: 'Ghibli',
@@ -335,7 +335,7 @@ const carsData = [
     price: 1599.99,
     color: 'orange',
     stock: 3,
-    image_url: "./fleetImages/maseratiGhibli.jpg",
+    image_url: "/images/fleetImages/maseratiGhibli.jpg",
   },
   {
     car_name: 'Gran Turismo',
@@ -343,7 +343,7 @@ const carsData = [
     price: 1599.99,
     color: 'orange',
     stock: 3,
-    image_url: "./fleetImages/maseratiGranTurismo.jpg",
+    image_url: "/images/fleetImages/maseratiGranTurismo.jpg",
   },
   {
     car_name: 'Levante',
@@ -351,7 +351,7 @@ const carsData = [
     price: 1599.99,
     color: 'orange',
     stock: 3,
-    image_url: "./fleetImages/maseratiLevante.jpg",
+    image_url: "/images/fleetImages/maseratiLevante.jpg",
   },
   {
     car_name: 'MC20',
@@ -359,7 +359,7 @@ const carsData = [
     price: 1599.99,
     color: 'orange',
     stock: 3,
-    image_url: "./fleetImages/maseratiMC20.jpg",
+    image_url: "/images/fleetImages/maseratiMC20.jpg",
   },
   {
     car_name: 'Model S',
@@ -367,7 +367,7 @@ const carsData = [
     price: 1599.99,
     color: 'orange',
     stock: 3,
-    image_url: "./fleetImages/teslaModelS.jpg",
+    image_url: "/images/fleetImages/teslaModelS.jpg",
   },
   {
     car_name: 'Model X',
@@ -375,7 +375,7 @@ const carsData = [
     price: 1599.99,
     color: 'orange',
     stock: 3,
-    image_url: "./fleetImages/teslaModelX.jpg",
+    image_url: "/images/fleetImages/teslaModelX.jpg",
   },
   {
     car_name: 'Cybertruck',
@@ -383,7 +383,7 @@ const carsData = [
     price: 1599.99,
     color: 'orange',
     stock: 3,
-    image_url: "./fleetImages/teslaCybertruck.jpg",
+    image_url: "/images/fleetImages/teslaCybertruck.jpg",
   },
   {
     car_name: 'Model Y',
@@ -391,7 +391,7 @@ const carsData = [
     price: 1599.99,
     color: 'orange',
     stock: 3,
-    image_url: "./fleetImages/teslaModelY.jpg",
+    image_url: "/images/fleetImages/teslaModelY.jpg",
   },
   {
     car_name: 'Roadster',
@@ -399,7 +399,7 @@ const carsData = [
     price: 1599.99,
     color: 'orange',
     stock: 3,
-    image_url: "./fleetImages/teslaRoadster.jpg",
+    image_url: "/images/fleetImages/teslaRoadster.jpg",
   },
   {
     car_name: 'GT3 RS',
@@ -407,7 +407,7 @@ const carsData = [
     price: 1599.99,
     color: 'orange',
     stock: 3,
-    image_url: "./fleetImages/porscheGT3RS.jpg",
+    image_url: "/images/fleetImages/porscheGT3RS.jpg",
   },
   {
     car_name: 'Panamera',
@@ -415,7 +415,7 @@ const carsData = [
     price: 1599.99,
     color: 'gray',
     stock: 3,
-    image_url: "./fleetImages/porschePanamera.jpg",
+    image_url: "/images/fleetImages/porschePanamera.jpg",
   },
   {
     car_name: 'Cayman',
@@ -423,7 +423,7 @@ const carsData = [
     price: 1599.99,
     color: 'orange',
     stock: 3,
-    image_url: "./fleetImages/porscheCayman.jpg",
+    image_url: "/images/fleetImages/porscheCayman.jpg",
   },
   {
     car_name: 'Cayenne',
@@ -431,7 +431,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/porscheCayenne.jpg",
+    image_url: "/images/fleetImages/porscheCayenne.jpg",
   },
   {
     car_name: 'Macan',
@@ -439,7 +439,7 @@ const carsData = [
     price: 1599.99,
     color: 'green',
     stock: 3,
-    image_url: "./fleetImages/porscheMacan.jpg",
+    image_url: "/images/fleetImages/porscheMacan.jpg",
   },
   {
     car_name: 'Q7',
@@ -447,7 +447,7 @@ const carsData = [
     price: 1599.99,
     color: 'white',
     stock: 3,
-    image_url: "./fleetImages/audiQ7.jpg",
+    image_url: "/images/fleetImages/audiQ7.jpg",
   },
   {
     car_name: 'A8',
@@ -455,7 +455,7 @@ const carsData = [
     price: 1599.99,
     color: 'black',
     stock: 3,
-    image_url: "./fleetImages/audiA8.jpg",
+    image_url: "/images/fleetImages/audiA8.jpg",
   },
   {
     car_name: 'R8',
@@ -463,7 +463,7 @@ const carsData = [
     price: 1599.99,
     color: 'orange',
     stock: 3,
-    image_url: "./fleetImages/audiR8.jpg",
+    image_url: "/images/fleetImages/audiR8.jpg",
   },
   {
     car_name: 'RS6',
@@ -471,7 +471,7 @@ const carsData = [
     price: 1599.99,
     color: 'yellow',
     stock: 3,
-    image_url: "./fleetImages/audiRS6.jpg",
+    image_url: "/images/fleetImages/audiRS6.jpg",
   },
   {
     car_name: 'RS4',
@@ -479,7 +479,7 @@ const carsData = [
     price: 1599.99,
     color: 'blue',
     stock: 3,
-    image_url: "./fleetImages/audiRS4.jpg",
+    image_url: "/images/fleetImages/audiRS4.jpg",
   },
 ];
 
