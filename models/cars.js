@@ -41,6 +41,10 @@ Cars.init(
       validate: {
         isNumeric: true,
       },
+    },
+    image_url: {
+      type: DataTypes.STRING, 
+      allowNull: false,
     },  
   },
   {

@@ -13,23 +13,14 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/cars/:id', async (req, res) => {
+router.get('/cars', async (req, res) => {
   try {
-    const carData = await Cars.findByPk(req.params.id, {
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
+    const carData = await Cars.findAll();
 
-    const cars = carData.get({ plain: true });
+    const cars = carData.map((car) => car.get({plain: true}))
     
     res.render('fleet', {
-      
-      ...cars,
-      logged_in: req.session.logged_in
+      cars
     });
   } catch (err) {
     res.status(500).json(err);
