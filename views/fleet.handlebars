@@ -1,66 +1,8 @@
 <div class="container">
   <h1>Fleet</h1>
   <div class="car-list">
-    <div class="firstThree">
-      <div class="car">
-        <img src="./assets/fleetImages/lamborghiniHuracan.jpg" alt="car1">
-        <h2>Lamborghini Huracán</h2>
-        <p>Price: $1000</p>
-        <button>Reserve Now</button>
-      </div>
-      <div class="car">
-        <img src="./assets/fleetImages/lamborghiniUrus.jpg" alt="car2">
-        <h2>Lamborghini Urus</h2>
-        <p>Price: $2000</p>
-        <button>Reserve Now</button>
-      </div>
-      <div class="car">
-        <img src="./assets/fleetImages/lamboRevuelto.jpg" alt="car3">
-        <h2>Lamborghini Revuelto</h2>
-        <p>Price: $3000</p>
-        <button>Reserve Now</button>
-      </div>
-    </div>
-    <div class="secondThree">
-      <div class="car">
-        <img src="./assets/fleetImages/lamboGallardo.jpg" alt="car4">
-        <h2>Lamborghini Gallardo</h2>
-        <p>Price: $4000</p>
-        <button>Reserve Now</button>
-      </div>
-      <div class="car">
-        <img src="./assets/fleetImages/lamboMurcielago.jpg" alt="car5">
-        <h2>Lamborghini Murcielago</h2>
-        <p>Price: $5000</p>
-        <button>Reserve Now</button>
-      </div>
-      <div class="car">
-        <img src="./assets/fleetImages/ferrarrisf90.jpg" alt="car6">
-        <h2>Ferrari SF90</h2>
-        <p>Price: $6000</p>
-        <button>Reserve Now</button>
-      </div>
-    </div>
-    <div class="thirdThree">
-      <div class="car">
-        <img src="./assets/fleetImages/ferrari296GTB.jpg" alt="car7">
-        <h2>Ferrari 296GTB</h2>
-        <p>Price: $7000</p>
-        <button>Reserve Now</button>
-      </div>
-      <div class="car">
-        <img src="./assets/fleetImages/ferrari12Cilindri.jpg" alt="car8">
-        <h2>Ferrari 12Cilindri</h2>
-        <p>Price: $8000</p>
-        <button>Reserve Now</button>
-      </div>
-      <div class="car">
-        <img src="./assets/fleetImages/ferraripurosangue.jpg" alt="car9">
-        <h2>Ferrari Purosangue</h2>
-        <p>Price: $5000</p>
-        <button>Reserve Now</button>
-      </div>
-
-    </div>
+    {{#each cars as |car|}}
+    {{> car}}
+    {{/each}}
   </div>
 </div>
