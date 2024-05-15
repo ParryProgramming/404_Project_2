@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Cars, User } = require('../models');
 const withAuth = require('../utils/auth');
-
+const nodemailer = require('nodemailer');
 
 router.get('/', async (req, res) => {
   try {
@@ -35,7 +35,26 @@ router.get('/cars/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
+ router.get('/send-email', async (req, res) => {
+    try {
+      // Send email logic
+      const mailOptions = {
+        from: 'royceatkins93@gmail.com', // Your Gmail address
+        to: 'royceatkins93@gmail.com', // Recipient email address
+        subject: 'Test Email',
+        text: 'This is a test email from Nodemailer.'
+      };
+  
+      // Send the email
+      await transporter.sendMail(mailOptions);
+  
+      res.send('Email sent successfully');
+    } catch (err) {
+      console.error('Error sending email:', err);
+      res.status(500).json({ error: 'Error sending email' });
+    }
+  });
+ 
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
   try {
@@ -62,8 +81,8 @@ router.get('/login', (req, res) => {
     res.render('homepage');
     return;
   }
+ res.render('homepage');
 
-  res.render('homepage');
-});
+}); 
 
 module.exports = router;
