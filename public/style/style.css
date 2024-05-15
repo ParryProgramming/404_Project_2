@@ -1,3 +1,4 @@
+/* Fleet Page */
 body {
     background-color: black;
     color: rgb(192, 192, 192);
@@ -58,6 +59,13 @@ body {
     height: 50vh;
 }
 
+/* homepage */
+.homepage-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%
+}
 
 nav {
     display: flex;
@@ -73,17 +81,18 @@ nav {
     justify-self: flex-start;
 }
 
-.title-png h1:hover {
+.title-png a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title-png a:hover {
     cursor: pointer;
 }
 
 .title-png img {
     height: 30px;
     width: 30px;
-}
-
-.title-png img:hover {
-    cursor: pointer;
 }
 
 .nav-links {
@@ -106,7 +115,7 @@ nav {
 }
 
 
-.homepage-main {
+.homepage-top {
     display: flex;
     height: 100vh;
     width: 100%;
@@ -127,7 +136,7 @@ nav {
     backdrop-filter: blur(10px);
 }
 
-.homepage-main h1 {
+.homepage-top h1 {
     font-size: 4em;
     color: white;
     opacity: 90%;
@@ -140,4 +149,29 @@ nav {
 
 .login-form{
     color: black;
+}
+
+/* carousel section */
+
+
+.makes {
+    background: url(/images/track-img.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.carousel-inner {
+    width: 100%
+}
+
+.carousel-inner img {
+    height: 400px;
+    width: 400px;
 }
