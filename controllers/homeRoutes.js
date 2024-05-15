@@ -2,26 +2,12 @@ const router = require('express').Router();
 const { Cars, User } = require('../models');
 const withAuth = require('../utils/auth');
 
+
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
-    const userData = await User.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
-
-    // Serialize data so the template can read it
-    const user = userData.map((users) => users.get({ plain: true }));
-
-    // Pass serialized data and session flag into template
-    res.render('homepage', { 
-      user, 
-      // logged_in: req.session.logged_in 
-    });
+       // Pass serialized data and session flag into template
+    res.render('homepage');
   } catch (err) {
     res.status(500).json(err);
   }
@@ -32,8 +18,8 @@ router.get('/cars/:id', async (req, res) => {
     const carData = await Cars.findByPk(req.params.id, {
       include: [
         {
-          model: Cars,
-          attributes: ['car_name'],
+          model: User,
+          attributes: ['name'],
         },
       ],
     });
@@ -61,7 +47,7 @@ router.get('/profile', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
 
-    res.render('profile', {
+    res.render('main', {
       ...user,
       logged_in: true
     });
@@ -73,11 +59,11 @@ router.get('/profile', withAuth, async (req, res) => {
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/profile');
+    res.render('homepage');
     return;
   }
 
-  res.render('login');
+  res.render('homepage');
 });
 
 module.exports = router;
