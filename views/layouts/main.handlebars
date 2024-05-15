@@ -12,22 +12,20 @@
 <body>
   <nav>
     <div class="title-png">
-      <h1 href="/">Summit</h1> <img href="/" src="/images/summit-logo.png" alt="">
+      <a href="/"><h1>Summit</h1></a> <a href="/"><img src="/images/summit-logo.png" alt=""></a>
     </div>
     <div class="nav-links">
       <a href="/cars">Our Fleet</a>
-      <a href="#" data-bs-target="#reservationModal" data-bs-toggle="modal">Reserve your Ride</a>
+      <a href="" data-bs-target="#reservationModal" data-bs-toggle="modal">Reserve your Ride</a>
       <a href="">About Us</a>
       {{#if logged_in}}
       <a href="/profile">Profile</a>
       {{else}}
-      <a href="#" data-bs-target="#loginModal" data-bs-toggle="modal">Login/Sign up</a>
+      <a href="" data-bs-target="#loginModal" data-bs-toggle="modal">Login/Sign up</a>
       {{/if}}
     </div>
   </nav>
-  {{{body}}}
   {{!-- modals --}}
-
   <!-- login/sign up modal -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -139,6 +137,8 @@
     </div>
   </div>
 
+ {{{body}}}
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 
 </html>
