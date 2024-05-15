@@ -23,7 +23,7 @@ const carsData = [
     price: 14.99,
     color: 'gold',
     stock: 3,
-    image_url: "/images/fleetImages/lamborghiniRevuelto.jpg",
+    image_url: "/images/fleetImages/lamboRevuelto2.jpg",
   },
   {
     car_name: 'Gallardo',
@@ -31,7 +31,7 @@ const carsData = [
     price: 14.99,
     color: 'green',
     stock: 3,
-    image_url: "/images/fleetImages/lamborghiniGallardo.jpg",
+    image_url: "/images/fleetImages/lamboGallardo2.jpg",
   },
   {
     car_name: 'Murcielago',
@@ -39,7 +39,7 @@ const carsData = [
     price: 14.99,
     color: 'yellow',
     stock: 3,
-    image_url: "/images/fleetImages/lamborghiniMurcielago.jpg",
+    image_url: "/images/fleetImages/lamboMurcielago.jpg",
   },
   {
     car_name: 'SF90',
@@ -47,7 +47,7 @@ const carsData = [
     price: 14.99,
     color: 'red',
     stock: 3,
-    image_url: "/images/fleetImages/ferrariSF90.jpg",
+    image_url: "/images/fleetImages/ferrariSF90-2.jpg",
   },
   {
     car_name: '296GTB',
@@ -79,7 +79,7 @@ const carsData = [
     price: 14.99,
     color: 'red',
     stock: 3,
-    image_url: "/images/fleetImages/ferrariRoma.jpg",
+    image_url: "/images/fleetImages/ferrariRoma2.jpg",
   },
   {
     car_name: 'Bentayga',
