@@ -160,11 +160,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    height: 70vh;
+    width: 100%;
+    margin-top: 1em;
 }
 
 .carousel-inner {
@@ -174,4 +172,12 @@ nav {
 .carousel-inner img {
     height: 400px;
     width: 400px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15vh;
+    margin-left: 10em;
 }
