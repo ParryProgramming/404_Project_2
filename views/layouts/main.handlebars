@@ -25,55 +25,119 @@
       {{/if}}
     </div>
   </nav>
- {{{body}}}
-  {{!-- modals  --}}
+  {{{body}}}
+  {{!-- modals --}}
 
-   <!-- login/sign up modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Log in or Sign up</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form class="login-form">
-                    <label for="email">Email:</label><br>
-                    <input type="text" id="email" name="email"><br>
-                    <label for="password">Password:</label><br>
-                    <input type="text" id="password" name="password">
-                </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Sign Up</button>
-            </div>
-          </div>
+  <!-- login/sign up modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Log in or Sign up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="login-form">
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="text" id="password" name="password">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Sign Up</button>
         </div>
       </div>
-      <!-- Reservation Modal -->
-      <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Reserve your Ride</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form class="login-form">
-                    <label for="start">Start Date</label><br>
-                    <input type="date" id="start" name="start"><br>
-                    <label for="end">End Date</label><br>
-                    <input type="date" id="end" name="end">
-                </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Reserve Now</button>
-            </div>
-          </div>
+    </div>
+  </div>
+  <!-- Reservation Modal -->
+  <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Reserve your Ride</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="reservation-form">
+            <label for="cars">Select your Car</label>
+            <select name="cars">
+              <option value="Huracan">Lamborghini Huracan</option>
+              <option value="Urus">Lamborghini Urus</option>
+              <option value="Revuelto">Lamborghini Revuelto</option>
+              <option value="Gallardo">Lamborghini Gallardo</option>
+              <option value="Murcielago">Lamborghini Murcielago</option>
+              <option value="SF90">Ferrari SF90</option>
+              <option value="296GTB">Ferrari 296GTB</option>
+              <option value="12Cilindri">Ferrari 12Cilindri</option>
+              <option value="Purosangue">Ferrari Purosangue</option>
+              <option value="Roma">Ferrari Roma</option>
+              <option value="Bentayga">Bentley Bentayga</option>
+              <option value="Continental">Bentley Continental</option>
+              <option value="Flying Spur">Bentley Flying Spur</option>
+              <option value="Continental GT Convertible">Bentley Continental GT Convertible</option>
+              <option value="Continental GT Coupe">Bentley Continental GT Coupe</option>
+              <option value="Phantom">Rolls-Royce Phantom</option>
+              <option value="Cullinan">Rolls-Royce Cullinan</option>
+              <option value="Ghost">Rolls-Royce Ghost</option>
+              <option value="Spectre">Rolls-Royce Spectre</option>
+              <option value="Ghost Black Badge">Rolls-Royce Ghost Black Badge</option>
+              <option value="F-Pace">Jaguar F-Pace</option>
+              <option value="E-Pace">Jaguar E-Pace</option>
+              <option value="F-Type">Jaguar F-Type</option>
+              <option value="XF">Jaguar XF</option>
+              <option value="F-Type Convertible">Jaguar F-Type Convertible</option>
+              <option value="Vantage">Aston Martin Vantage</option>
+              <option value="DBX">Aston Martin DBX</option>
+              <option value="DB12">Aston Martin DB12</option>
+              <option value="DBS">Aston Martin DBS</option>
+              <option value="Valour">Aston Martin Valour</option>
+              <option value="G-Class">Mercedes-Benz G-Class</option>
+              <option value="GLS">Mercedes-Benz GLS</option>
+              <option value="Maybach">Mercedes-Benz Maybach</option>
+              <option value="S Class">Mercedes-Benz S Class</option>
+              <option value="AMG GT">Mercedes-Benz AMG GT</option>
+              <option value="X7">BMW X7</option>
+              <option value="750i">BMW 750i</option>
+              <option value="M3">BMW M3</option>
+              <option value="i8">BMW i8</option>
+              <option value="M5">BMW M5</option>
+              <option value="Z4">BMW Z4</option>
+              <option value="Ghibli">Maserati Ghibli</option>
+              <option value="Gran Turismo">Maserati Gran Turismo</option>
+              <option value="Levante">Maserati Levante</option>
+              <option value="MC20">Maserati MC20</option>
+              <option value="Model S">Tesla Model S</option>
+              <option value="Model X">Tesla Model X</option>
+              <option value="Cybertruck">Tesla Cybertruck</option>
+              <option value="Model Y">Tesla Model Y</option>
+              <option value="Roadster">Tesla Roadster</option>
+              <option value="GT3 RS">Porsche GT3 RS</option>
+              <option value="Panamera">Porsche Panamera</option>
+              <option value="Cayman">Porsche Cayman</option>
+              <option value="Cayenne">Porsche Cayenne</option>
+              <option value="Macan">Porsche Macan</option>
+              <option value="Q7">Audi Q7</option>
+              <option value="A8">Audi A8</option>
+              <option value="R8">Audi R8</option>
+              <option value="RS6">Audi RS6</option>
+              <option value="RS4">Audi RS4</option>
+            </select>
+
+            <label for="start">Start Date</label><br>
+            <input type="date" id="start" name="start"><br>
+            <label for="end">End Date</label><br>
+            <input type="date" id="end" name="end">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Reserve Now</button>
         </div>
       </div>
+    </div>
+  </div>
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
