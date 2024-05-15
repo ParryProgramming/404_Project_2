@@ -1,12 +1,6 @@
-   <div class="container">
-        <div class="car-list">
-            {{#each cars}}
-                <div class="car">
-                    <img src="{{this.image}}" alt="{{this.alt}}">
-                    <h2>{{this.car_name}}</h2>
-                    <p>Price: {{this.price}}</p>
-                    <button>Reserve Now</button>
-                </div>
-            {{/each}}
-        </div>
-    </div>
+<div class="car">
+    <img src="{{car.image}}" alt="{{this.alt}}">
+    <h2>{{car.car_name}}</h2>
+    <p>Price: {{car.price}}</p>
+    <button>Reserve Now</button>
+</div>
