@@ -1,29 +1,20 @@
-// import models
-const Cars = require('./cars');
-const Makes = require('./makes');
-const CarTag = require('./cartag');
-const User = require('./User');
-const ProductTag = require('./ProductTag');
+const Cars = require('./cars.js');
+const User = require('./User.js');
+const Rental = require('./carRental.js')
+// Define the associations
 
-
-Cars.belongsTo(Makes, {
-  foreignKey: 'category_id',
+Cars.belongsToMany(User, {
+  through: Rental,
+  foreignKey: 'car_id', 
+  onDelete: 'CASCADE',
 });
-
-Makes.hasMany(Cars, {
-  foreignKey: 'category_id',
-  as: 'products'
-})
-
-User.hasMany(Cars, {
-  through: Cars,
-  model: "cars",
-  foreignKey: 'id',
-  unique: false
+User.belongsToMany(Cars, {
+  through: Rental,
+  foreignKey: 'user_id', 
+  onDelete: 'CASCADE',
 });
 module.exports = {
-  Product,
-  Category,
-  Tag,
-  ProductTag,
+  Cars,
+  User,
+  Rental,
 };
