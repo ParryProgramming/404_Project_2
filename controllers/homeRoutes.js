@@ -5,31 +5,7 @@ const withAuth = require('../utils/auth');
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
-    const carsData = await Cars.findAll({
-      include: [
-        {
-          model: Cars,
-          attributes: ['name'],
-        },
-      ],
-    });
-
-    // Serialize data so the template can read it
-    const cars = carsData.map((cars) => cars.get({ plain: true }));
-
-    // Pass serialized data and session flag into template
-    res.render('homepage', { 
-      cars, 
-      logged_in: req.session.logged_in 
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-router.get('/cars/:id', async (req, res) => {
-  try {
-    const carsData = await Cars.findByPk(req.params.id, {
+    const userData = await User.findAll({
       include: [
         {
           model: User,
@@ -38,9 +14,33 @@ router.get('/cars/:id', async (req, res) => {
       ],
     });
 
-    const cars = carsData.get({ plain: true });
+    // Serialize data so the template can read it
+    const user = userData.map((users) => users.get({ plain: true }));
+
+    // Pass serialized data and session flag into template
+    res.render('homepage', { 
+      user, 
+      // logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/cars/:id', async (req, res) => {
+  try {
+    const carData = await Cars.findByPk(req.params.id, {
+      include: [
+        {
+          model: Cars,
+          attributes: ['car_name'],
+        },
+      ],
+    });
+
+    const cars = carData.get({ plain: true });
     
-    res.render('cars', {
+    res.render('fleet', {
       
       ...cars,
       logged_in: req.session.logged_in
