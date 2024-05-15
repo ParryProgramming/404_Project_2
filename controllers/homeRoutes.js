@@ -39,8 +39,9 @@ router.get('/cars/:id', async (req, res) => {
     });
 
     const cars = carsData.get({ plain: true });
-
+    
     res.render('cars', {
+      
       ...cars,
       logged_in: req.session.logged_in
     });
