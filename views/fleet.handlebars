@@ -1,8 +1,8 @@
-<div class="container">
+<div class="row">
   <h1>Fleet</h1>
-  <div class="car-list">
-    {{#each cars as |car|}}
-    {{> car}}
-    {{/each}}
-  </div>
+  {{#each cars as |car|}}
+    <div class="col-md-4">
+      {{> car}}
+    </div>
+  {{/each}}
 </div>

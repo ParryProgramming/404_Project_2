@@ -3,6 +3,7 @@ const { Cars, User } = require('../models');
 const withAuth = require('../utils/auth');
 const nodemailer = require('nodemailer');
 
+
 router.get('/', async (req, res) => {
   try {
        // Pass serialized data and session flag into template
@@ -94,13 +95,5 @@ router.get('/login', (req, res) => {
 
 }); 
 
-router.get('/logout', (req, res) => {
-  if (req.session.logged_out)
- {
-  res.render('/');
-  return;
- }
- res.render('/');
-});
 
 module.exports = router;
