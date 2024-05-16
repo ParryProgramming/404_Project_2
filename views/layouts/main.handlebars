@@ -21,30 +21,56 @@
       {{#if logged_in}}
       <a href="/profile">Profile</a>
       {{else}}
-      <a href="" data-bs-target="#loginModal" data-bs-toggle="modal">Login/Sign up</a>
+      <a href="" data-bs-target="#loginModal" data-bs-toggle="modal">Login</a>
+      <a href="" data-bs-target="#signupModal" data-bs-toggle="modal">Sign Up</a>
       {{/if}}
     </div>
   </nav>
   {{!-- modals --}}
-  <!-- login/sign up modal -->
+  <!-- login modal -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Log in or Sign up</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Log in</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <form class="login-form">
             <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
+            <input type="text" id="email-login" name="email"><br>
             <label for="password">Password:</label><br>
-            <input type="text" id="password" name="password">
+            <input type="password" id="password-login" name="password">
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" id="signUp" class="btn btn-primary">Sign Up</button>
+          <button type="submit" id="loginBtn" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{!-- Sign Up Modal --}}
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="signup-form">
+            <label for="username">Username:</label><br>
+            <input type="text" name="username" id="name-signup"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email-signup" name="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password-signup" name="password">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" id="signUpBtn" class="btn btn-primary">Sign Up</button>
         </div>
       </div>
     </div>
@@ -59,7 +85,7 @@
         </div>
         <div class="modal-body">
           <form class="reservation-form">
-            <label for="cars">Select your Car</label>
+            <label for="cars">Select your Car</label><br>
             <select name="cars" id="carSelection">
               <option value="Huracan">Lamborghini Huracan</option>
               <option value="Urus">Lamborghini Urus</option>
@@ -121,7 +147,7 @@
               <option value="R8">Audi R8</option>
               <option value="RS6">Audi RS6</option>
               <option value="RS4">Audi RS4</option>
-            </select>
+            </select><br>
 
             <label for="start">Start Date</label><br>
             <input type="date" id="startDate" name="start"><br>
@@ -144,6 +170,7 @@
   <h2>Ride in Style.</h2>
   <p><span>&copy;</span>2024 All Rights Reserved by Summit Luxury Experiences</p>
  </footer>
+ <script src="/public/js/index.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 
