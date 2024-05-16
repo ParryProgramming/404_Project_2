@@ -1,17 +1,43 @@
 const router = require('express').Router();
 const { User } = require('../../models');
-
+const nodemailer = require('nodemailer');
 router.post('/', async (req, res) => {
+  console.log(req.body)
   try {
     const userData = await User.create(req.body);
 
-    req.session.save(() => {
+    req.session.save(async() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
 
+      const recipientEmail = userData.email;
+
+      // Create a transporter for sending emails
+      const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        secure: true,
+        auth: {
+          user: 'royceatkins93@gmail.com',
+          pass: 'jgel hdyg qvir hgdr', // Your Gmail password or app-specific password
+        }
+      });
+
+
+      // Email options
+      const mailOptions = {
+        from: 'royceatkins93@gmail.com', // Your Gmail address
+        to: recipientEmail, // Recipient email address
+        subject: 'Test Email',
+        text: 'This is a test email from Nodemailer.',
+      };
+
+      // Send the email
+      await transporter.sendMail(mailOptions);
+
       res.status(200).json(userData);
-    });
+    })
   } catch (err) {
+    console.log(err)
     res.status(400).json(err);
   }
 });
@@ -39,7 +65,7 @@ router.post('/login', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-      
+
       res.json({ user: userData, message: 'You are now logged in!' });
     });
 

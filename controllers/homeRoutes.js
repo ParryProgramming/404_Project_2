@@ -5,9 +5,10 @@ const nodemailer = require('nodemailer');
 
 router.get('/', async (req, res) => {
   try {
-    // Get all projects and JOIN with user data
        // Pass serialized data and session flag into template
-    res.render('homepage');
+    res.render('homepage', {
+      logged_in: req.session.logged_in
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -20,7 +21,7 @@ router.get('/cars', async (req, res) => {
     const cars = carData.map((car) => car.get({plain: true}))
     
     res.render('fleet', {
-      cars
+      cars, 
     });
   } catch (err) {
     res.status(500).json(err);
