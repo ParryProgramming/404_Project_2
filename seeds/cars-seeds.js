@@ -12,7 +12,7 @@ const carsData = [
   {
     car_name: 'Urus',
     makes_name: 'Lamborghini',
-    price: 14.99,
+    price: 449.99,
     color: 'green',
     stock: 2,
     image_url: "/images/fleetImages/lamborghiniUrus.jpg",
@@ -20,7 +20,7 @@ const carsData = [
   {
     car_name: 'Revuelto',
     makes_name: 'Lamborghini',
-    price: 14.99,
+    price: 449.99,
     color: 'gold',
     stock: 3,
     image_url: "/images/fleetImages/lamboRevuelto2.jpg",
@@ -28,7 +28,7 @@ const carsData = [
   {
     car_name: 'Gallardo',
     makes_name: 'Lamborghini',
-    price: 14.99,
+    price: 349.99,
     color: 'green',
     stock: 3,
     image_url: "/images/fleetImages/lamboGallardo2.jpg",
@@ -36,7 +36,7 @@ const carsData = [
   {
     car_name: 'Murcielago',
     makes_name: 'Lamborghini',
-    price: 14.99,
+    price: 349.99,
     color: 'yellow',
     stock: 3,
     image_url: "/images/fleetImages/lamboMurcielago.jpg",
@@ -44,7 +44,7 @@ const carsData = [
   {
     car_name: 'SF90',
     makes_name: 'Ferrari',
-    price: 14.99,
+    price: 499.99,
     color: 'red',
     stock: 3,
     image_url: "/images/fleetImages/ferrariSF90-2.jpg",
@@ -52,7 +52,7 @@ const carsData = [
   {
     car_name: '296GTB',
     makes_name: 'Ferrari',
-    price: 14.99,
+    price: 499.99,
     color: 'red',
     stock: 3,
     image_url: "/images/fleetImages/ferrari296GTB.jpg",
@@ -60,7 +60,7 @@ const carsData = [
   {
     car_name: '12Cilindri',
     makes_name: 'Ferrari',
-    price: 14.99,
+    price: 429.99,
     color: 'red',
     stock: 3,
     image_url: "/images/fleetImages/ferrari12Cilindri.jpg",
@@ -68,7 +68,7 @@ const carsData = [
   {
     car_name: 'Purosangue',
     makes_name: 'Ferrari',
-    price: 14.99,
+    price: 429.99,
     color: 'red',
     stock: 3,
     image_url: "/images/fleetImages/ferrariPurosangue.jpg",
@@ -76,7 +76,7 @@ const carsData = [
   {
     car_name: 'Roma',
     makes_name: 'Ferrari',
-    price: 14.99,
+    price: 429.99,
     color: 'red',
     stock: 3,
     image_url: "/images/fleetImages/ferrariRoma2.jpg",
@@ -84,7 +84,7 @@ const carsData = [
   {
     car_name: 'Bentayga',
     makes_name: 'Bentley',
-    price: 14.99,
+    price: 429.99,
     color: 'silver',
     stock: 3,
     image_url: "/images/fleetImages/bentleyBentayga.jpg",
@@ -92,7 +92,7 @@ const carsData = [
   {
     car_name: 'Continental',
     makes_name: 'Bentley',
-    price: 14.99,
+    price: 429.99,
     color: 'gun metal',
     stock: 3,
     image_url: "/images/fleetImages/bentleyContinental.jpg",
@@ -100,7 +100,7 @@ const carsData = [
   {
     car_name: 'Flying Spur',
     makes_name: 'Bentley',
-    price: 14.99,
+    price: 429.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/bentleyFlyingSpur.jpg",
@@ -108,7 +108,7 @@ const carsData = [
   {
     car_name: 'Continental GT Convertible',
     makes_name: 'Bentley',
-    price: 14.99,
+    price: 429.99,
     color: 'white',
     stock: 3,
     image_url: "/images/fleetImages/bentleyContinentalGT.jpg",
@@ -116,7 +116,7 @@ const carsData = [
   {
     car_name: 'Continental GT Coupe',
     makes_name: 'Bentley',
-    price: 14.99,
+    price: 429.99,
     color: 'blue',
     stock: 3,
     image_url: "/images/fleetImages/bentleyGTcoupe.jpg",
@@ -124,7 +124,7 @@ const carsData = [
   {
     car_name: 'Phantom',
     makes_name: 'Rolls-Royce',
-    price: 14.99,
+    price: 429.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/roycePhantom.jpg",
@@ -132,7 +132,7 @@ const carsData = [
   {
     car_name: 'Cullinan',
     makes_name: 'Rolls-Royce',
-    price: 14.99,
+    price: 429.99,
     color: 'silver',
     stock: 3,
     image_url: "/images/fleetImages/royceCullinan.jpg",
@@ -140,7 +140,7 @@ const carsData = [
   {
     car_name: 'Ghost',
     makes_name: 'Rolls-Royce',
-    price: 14.99,
+    price: 429.99,
     color: 'gray',
     stock: 3,
     image_url: "/images/fleetImages/royceGhost.jpg",
@@ -148,7 +148,7 @@ const carsData = [
   {
     car_name: 'Spectre',
     makes_name: 'Rolls-Royce',
-    price: 14.99,
+    price: 429.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/royceSpectre.jpg",
@@ -156,7 +156,7 @@ const carsData = [
   {
     car_name: 'Ghost Black Badge',
     makes_name: 'Rolls-Royce',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/royceBlackBadge.jpg",
@@ -164,7 +164,7 @@ const carsData = [
   {
     car_name: 'F-Pace',
     makes_name: 'Jaguar',
-    price: 1399.99,
+    price: 389.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/jaguarFPace.jpg",
@@ -180,7 +180,7 @@ const carsData = [
   {
     car_name: 'F-Type',
     makes_name: 'Jaguar',
-    price: 1399.99,
+    price: 389.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/jaguarFType.jpg",
@@ -188,7 +188,7 @@ const carsData = [
   {
     car_name: 'XF',
     makes_name: 'Jaguar',
-    price: 1499.99,
+    price: 299.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/jaguarXF.jpg",
@@ -196,7 +196,7 @@ const carsData = [
   {
     car_name: 'F-Type Convertible',
     makes_name: 'Jaguar',
-    price: 1399.99,
+    price: 389.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/jaguarFTypeConvertible.jpg",
@@ -204,7 +204,7 @@ const carsData = [
   {
     car_name: 'Vantage',
     makes_name: 'Aston Martin',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/amVantage.jpg",
@@ -212,7 +212,7 @@ const carsData = [
   {
     car_name: 'DBX',
     makes_name: 'Aston Martin',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/amDBX.jpg",
@@ -220,7 +220,7 @@ const carsData = [
   {
     car_name: 'DB12',
     makes_name: 'Aston Martin',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/amDB12.jpg",
@@ -228,7 +228,7 @@ const carsData = [
   {
     car_name: 'DBS',
     makes_name: 'Aston Martin',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/amDBS.jpg",
@@ -236,7 +236,7 @@ const carsData = [
   {
     car_name: 'Valour',
     makes_name: 'Aston Martin',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/amValour.jpg",
@@ -244,7 +244,7 @@ const carsData = [
   {
     car_name: 'G-Class',
     makes_name: 'Mercedes-Benz',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/mercedesGClass.jpg",
@@ -252,7 +252,7 @@ const carsData = [
   {
     car_name: 'GLS',
     makes_name: 'Mercedes-Benz',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/mercedesMaybach.jpg",
@@ -260,7 +260,7 @@ const carsData = [
   {
     car_name: 'Maybach',
     makes_name: 'Mercedes-Benz',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/mercedesSClass.jpg",
@@ -268,7 +268,7 @@ const carsData = [
   {
     car_name: 'S Class',
     makes_name: 'Mercedes-Benz',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/mercedesAMGGT.jpg",
@@ -276,7 +276,7 @@ const carsData = [
   {
     car_name: 'AMG GT',
     makes_name: 'Mercedes-Benz',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/mercedesAMGGT.jpg",
@@ -284,7 +284,7 @@ const carsData = [
   {
     car_name: 'X7',
     makes_name: 'BMW',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/bmwX7.jpg",
@@ -292,7 +292,7 @@ const carsData = [
   {
     car_name: '750i',
     makes_name: 'BMW',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/bmw750i.jpg",
@@ -300,7 +300,7 @@ const carsData = [
   {
     car_name: 'M3',
     makes_name: 'BMW',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/bmwM3.jpg",
@@ -308,7 +308,7 @@ const carsData = [
   {
     car_name: 'i8',
     makes_name: 'BMW',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/bmwi8.jpg",
@@ -316,7 +316,7 @@ const carsData = [
   {
     car_name: 'M5',
     makes_name: 'BMW',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/bmwM5.jpg",
@@ -324,7 +324,7 @@ const carsData = [
   {
     car_name: 'Z4',
     makes_name: 'BMW',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/bmwZ4.jpg",
@@ -332,7 +332,7 @@ const carsData = [
   {
     car_name: 'Ghibli',
     makes_name: 'Maserati',
-    price: 1599.99,
+    price: 399.99,
     color: 'orange',
     stock: 3,
     image_url: "/images/fleetImages/maseratiGhibli.jpg",
@@ -340,7 +340,7 @@ const carsData = [
   {
     car_name: 'Gran Turismo',
     makes_name: 'Maserati',
-    price: 1599.99,
+    price: 399.99,
     color: 'orange',
     stock: 3,
     image_url: "/images/fleetImages/maseratiGranTurismo.jpg",
@@ -348,7 +348,7 @@ const carsData = [
   {
     car_name: 'Levante',
     makes_name: 'Maserati',
-    price: 1599.99,
+    price: 399.99,
     color: 'orange',
     stock: 3,
     image_url: "/images/fleetImages/maseratiLevante.jpg",
@@ -356,7 +356,7 @@ const carsData = [
   {
     car_name: 'MC20',
     makes_name: 'Maserati',
-    price: 1599.99,
+    price: 399.99,
     color: 'orange',
     stock: 3,
     image_url: "/images/fleetImages/maseratiMC20.jpg",
@@ -364,7 +364,7 @@ const carsData = [
   {
     car_name: 'Model S',
     makes_name: 'Tesla',
-    price: 1599.99,
+    price: 399.99,
     color: 'orange',
     stock: 3,
     image_url: "/images/fleetImages/teslaModelS.jpg",
@@ -372,7 +372,7 @@ const carsData = [
   {
     car_name: 'Model X',
     makes_name: 'Tesla',
-    price: 1599.99,
+    price: 399.99,
     color: 'orange',
     stock: 3,
     image_url: "/images/fleetImages/teslaModelX.jpg",
@@ -380,7 +380,7 @@ const carsData = [
   {
     car_name: 'Cybertruck',
     makes_name: 'Tesla',
-    price: 1599.99,
+    price: 399.99,
     color: 'orange',
     stock: 3,
     image_url: "/images/fleetImages/teslaCybertruck.jpg",
@@ -388,7 +388,7 @@ const carsData = [
   {
     car_name: 'Model Y',
     makes_name: 'Tesla',
-    price: 1599.99,
+    price: 399.99,
     color: 'orange',
     stock: 3,
     image_url: "/images/fleetImages/teslaModelY.jpg",
@@ -396,7 +396,7 @@ const carsData = [
   {
     car_name: 'Roadster',
     makes_name: 'Tesla',
-    price: 1599.99,
+    price: 399.99,
     color: 'orange',
     stock: 3,
     image_url: "/images/fleetImages/teslaRoadster.jpg",
@@ -404,7 +404,7 @@ const carsData = [
   {
     car_name: 'GT3 RS',
     makes_name: 'Porsche',
-    price: 1599.99,
+    price: 399.99,
     color: 'orange',
     stock: 3,
     image_url: "/images/fleetImages/porscheGT3RS.jpg",
@@ -412,7 +412,7 @@ const carsData = [
   {
     car_name: 'Panamera',
     makes_name: 'Porsche',
-    price: 1599.99,
+    price: 399.99,
     color: 'gray',
     stock: 3,
     image_url: "/images/fleetImages/porschePanamera.jpg",
@@ -420,7 +420,7 @@ const carsData = [
   {
     car_name: 'Cayman',
     makes_name: 'Porsche',
-    price: 1599.99,
+    price: 399.99,
     color: 'orange',
     stock: 3,
     image_url: "/images/fleetImages/porscheCayman.jpg",
@@ -428,7 +428,7 @@ const carsData = [
   {
     car_name: 'Cayenne',
     makes_name: 'Porsche',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/porscheCayenne.jpg",
@@ -436,7 +436,7 @@ const carsData = [
   {
     car_name: 'Macan',
     makes_name: 'Porsche',
-    price: 1599.99,
+    price: 399.99,
     color: 'green',
     stock: 3,
     image_url: "/images/fleetImages/porscheMacan.jpg",
@@ -444,7 +444,7 @@ const carsData = [
   {
     car_name: 'Q7',
     makes_name: 'Audi',
-    price: 1599.99,
+    price: 399.99,
     color: 'white',
     stock: 3,
     image_url: "/images/fleetImages/audiQ7.jpg",
@@ -452,7 +452,7 @@ const carsData = [
   {
     car_name: 'A8',
     makes_name: 'Audi',
-    price: 1599.99,
+    price: 399.99,
     color: 'black',
     stock: 3,
     image_url: "/images/fleetImages/audiA8.jpg",
@@ -460,7 +460,7 @@ const carsData = [
   {
     car_name: 'R8',
     makes_name: 'Audi',
-    price: 1599.99,
+    price: 399.99,
     color: 'orange',
     stock: 3,
     image_url: "/images/fleetImages/audiR8.jpg",
@@ -468,7 +468,7 @@ const carsData = [
   {
     car_name: 'RS6',
     makes_name: 'Audi',
-    price: 1599.99,
+    price: 399.99,
     color: 'yellow',
     stock: 3,
     image_url: "/images/fleetImages/audiRS6.jpg",
@@ -476,7 +476,7 @@ const carsData = [
   {
     car_name: 'RS4',
     makes_name: 'Audi',
-    price: 1599.99,
+    price: 399.99,
     color: 'blue',
     stock: 3,
     image_url: "/images/fleetImages/audiRS4.jpg",
