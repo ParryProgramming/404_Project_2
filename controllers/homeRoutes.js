@@ -1,12 +1,12 @@
 const router = require('express').Router();
-const { Cars, User } = require('../models');
+const { Cars, User, Rental } = require('../models');
 const withAuth = require('../utils/auth');
 const nodemailer = require('nodemailer');
 
 
 router.get('/', async (req, res) => {
   try {
-       // Pass serialized data and session flag into template
+    // Pass serialized data and session flag into template
     res.render('homepage', {
       logged_in: req.session.logged_in
     });
@@ -19,10 +19,10 @@ router.get('/cars', async (req, res) => {
   try {
     const carData = await Cars.findAll();
 
-    const cars = carData.map((car) => car.get({plain: true}))
-    
+    const cars = carData.map((car) => car.get({ plain: true }))
+
     res.render('fleet', {
-      cars, 
+      cars,
       logged_in: req.session.logged_in
     });
   } catch (err) {
@@ -41,12 +41,12 @@ router.get('/send-email', withAuth, async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       secure: true,
-  auth: {
-    user: 'royceatkins93@gmail.com',
-    pass: 'jgel hdyg qvir hgdr', // Your Gmail password or app-specific password
-  }
+      auth: {
+        user: 'royceatkins93@gmail.com',
+        pass: 'jgel hdyg qvir hgdr', // Your Gmail password or app-specific password
+      }
     });
-  
+
 
     // Email options
     const mailOptions = {
@@ -67,19 +67,45 @@ router.get('/send-email', withAuth, async (req, res) => {
   }
 });
 // Use withAuth middleware to prevent access to route
+// router.get('/profile', withAuth, async (req, res) => {
+//   try {
+//     // Find the logged in user based on the session ID
+//     const userData = await User.findByPk(req.session.user_id, {
+//       attributes: { exclude: ['password'] },
+//          include: [
+//           {
+//             association: 'rental',
+//             required: false,
+//             where: { 
+//               user_id : req.session.user_id,
+//             },
+//           },
+//         ],  
+//     });   
+//     const user = userData.get({ plain: true });
+
+//     res.render('profile', {
+//       user,
+   
+//       logged_in: req.session.logged_in
+//     });
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 router.get('/profile', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Project }],
+      include: [{ model: Rental }],
     });
 
     const user = userData.get({ plain: true });
 
     res.render('profile', {
       user,
-      logged_in: req.session.logged_in
+      logged_in: true
     });
   } catch (err) {
     res.status(500).json(err);
@@ -92,9 +118,9 @@ router.get('/login', (req, res) => {
     res.render('homepage');
     return;
   }
- res.render('homepage');
+  res.render('homepage');
 
-}); 
+});
 
 
 module.exports = router;

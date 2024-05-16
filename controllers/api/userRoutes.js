@@ -27,8 +27,8 @@ router.post('/', async (req, res) => {
       const mailOptions = {
         from: 'royceatkins93@gmail.com', // Your Gmail address
         to: recipientEmail, // Recipient email address
-        subject: 'Test Email',
-        text: 'This is a test email from Nodemailer.',
+        subject: 'Summit Luxury',
+        text: 'Welcome to Summit Luxury Experiences. Thank you for joining! Please enjoy our selection of luxurious vehicles for you to rent on your next getaway.',
       };
 
       // Send the email
@@ -75,7 +75,6 @@ router.post('/login', async (req, res) => {
 });
 
 router.post('/logout', (req, res) => {
-  console.log('asdfasdfasdfasdfasdfasdf');
   if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();

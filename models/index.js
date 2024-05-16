@@ -13,6 +13,10 @@ User.belongsToMany(Cars, {
   foreignKey: 'user_id', 
   onDelete: 'CASCADE',
 });
+User.hasMany(Rental, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+});
 module.exports = {
   Cars,
   User,
