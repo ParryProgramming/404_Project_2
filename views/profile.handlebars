@@ -1,13 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../public/style/profile.css">
+</head>
 <body>
-    <div class="user-info">
-
-    </div>
-    <div class="user-rentals">
-        <div class="previous-rentals">
-
-        </div>
-        <div class="upcoming rentals">
-            
-        </div>
+    <div class="container">
+        <h2>{{user.name}}'s Profile</h2>
+        <p>Email: {{user.email}}</p>
+        <p>Username: {{user.username}}</p>
+        <img src="{{user.profilePicture}}" alt="Profile Picture">
     </div>
 </body>
+</html>
