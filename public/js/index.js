@@ -1,6 +1,5 @@
-let carSelection = document.querySelector('#carSelection');
-let startDate = document.querySelector('#startDate');
-let endDate = document.querySelector('#endDate');
+loginBtn = document.querySelector('#loginBtn');
+signUpBtn = document.querySelector('#signUpBtn');
 
 
 const loginFormHandler = async () => {
@@ -18,7 +17,7 @@ const loginFormHandler = async () => {
   
       if (response.ok) {
         // If successful, redirect the browser to the profile page
-        document.location.replace('/profile');
+        document.location.replace('/');
       } else {
         alert(response.statusText);
       }
@@ -39,17 +38,13 @@ const loginFormHandler = async () => {
       });
   
       if (response.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/');
       } else {
         alert(response.statusText);
       }
     }
   };
 
-document
-  .querySelector('#loginBtn')
-  .addEventListener('click', loginFormHandler);
+loginBtn.addEventListener('click', loginFormHandler);
 
-document
-  .querySelector('#signUpBtn')
-  .addEventListener('click', signupFormHandler);
+signUpBtn.addEventListener('click', signupFormHandler);
