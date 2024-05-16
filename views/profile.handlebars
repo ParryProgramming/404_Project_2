@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-    <link rel="stylesheet" href="../public/style/profile.css">
-</head>
-<body>
-    <div class="container">
-        <h2>{{user.name}}'s Profile</h2>
-        <p>Email: {{user.email}}</p>
-        <p>Username: {{user.username}}</p>
-        <img src="{{user.profilePicture}}" alt="Profile Picture">
-    </div>
-</body>
-</html>
+<div class="profile-container">
+    <h2 class="profile-h2">{{user.name}}'s Profile</h2>
+    <p class="profile-p">Email: {{user.email}}</p>
+    <p class="profile-p">Username: {{user.username}}</p>
+    <img class="profile-img" src="{{user.profilePicture}}" alt="Profile Picture">
+</div>

@@ -6,7 +6,7 @@ body {
     color: #fff;
 }
 
-.container {
+.profile-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -15,19 +15,19 @@ body {
     border-radius: 10px;
 }
 
-h2 {
+.profile-h2 {
     color: #fff;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
 }
 
-p {
+.profile-p {
     font-size: 18px;
     line-height: 1.6;
     color: #fff;
 }
 
-img {
+.profile-img {
     max-width: 200px;
     height: auto;
     border-radius: 50%;
@@ -35,7 +35,7 @@ img {
     margin: 20px auto;
 }
 
-label {
+/* label {
     font-weight: bold;
     color: #fff;
 }
@@ -51,4 +51,4 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #7986CB;
-}
+} */
