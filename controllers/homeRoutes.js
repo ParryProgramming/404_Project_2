@@ -94,4 +94,13 @@ router.get('/login', (req, res) => {
 
 }); 
 
+router.get('/logout', (req, res) => {
+  if (req.session.logged_out)
+ {
+  res.render('/');
+  return;
+ }
+ res.render('/');
+});
+
 module.exports = router;
