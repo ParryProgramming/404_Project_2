@@ -1,5 +1,6 @@
-loginBtn = document.querySelector('#loginBtn');
-signUpBtn = document.querySelector('#signUpBtn');
+let carSelection = document.querySelector('#carSelection');
+let startDate = document.querySelector('#startDate');
+let endDate = document.querySelector('#endDate');
 
 
 const loginFormHandler = async () => {
@@ -45,6 +46,10 @@ const loginFormHandler = async () => {
     }
   };
 
-loginBtn.addEventListener('click', loginFormHandler);
+document
+  .querySelector('#loginBtn')
+  .addEventListener('click', loginFormHandler);
 
-signUpBtn.addEventListener('click', signupFormHandler);
+document
+  .querySelector('#signUpBtn')
+  .addEventListener('click', signupFormHandler);
