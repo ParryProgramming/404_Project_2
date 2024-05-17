@@ -136,17 +136,19 @@ This project is licensed under the MIT license.
 See LICENSE.txt for more information.
 
 
-## Contact
+## Collaborator Git Hubs
 
-[Mary Elenius](https://maryelenius.com/d20) - mary.panda.jackson@gmail.com
+[Royce Atkins](https://github.com/Wartech93) 
 
+[Christian Abbate](https://github.com/Abbate11) 
 
-[Cody Chase](https://github.com/Wartech93) - [TODO- cody's email will go here]
+[Val Spadoni](https://github.com/oooweeee) 
+
+[Alberto Lawant](https://github.com/ParryProgramming)
+
 
 Project Links:
 
-
-[Figma Board- link later]()
 
 [Github Repository](https://github.com/ParryProgramming/404_Project_2)
 
@@ -156,4 +158,4 @@ Project Links:
 
 ## Acknowledgments
 
-Mary would like to give a big shoutout to my partner in crime and daughter, Yennefer! Every day she proves she is small yet mighty! She would also like to thank all of her students in the Spring 2024 UCF Full Stack Bootcamp for being a fantastic cohort!
+We would like to give a shoutout to the TAs Mary and Cody as well as John for helping us fix all of our issues and making our page look awesome! Also for our class mates that spent the time to work with us and make this such a fun project!
