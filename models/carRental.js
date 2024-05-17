@@ -18,7 +18,7 @@ Rental.init(
     car_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
+        model: 'cars',
         key: 'id',
         unique: false,
       },      

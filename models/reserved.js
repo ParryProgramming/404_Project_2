@@ -38,14 +38,15 @@ Reserved.init(
         type: DataTypes.BOOLEAN,
         defaultValue: false,
     },
-    makes_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'makes',
-        key: 'id',
-        unique: false,
-      },      
-    }, 
+    date_rented: {
+      type: DataTypes.DATEONLY,
+      allowNull: false,
+    },
+    date_returned: {
+      type: DataTypes.DATEONLY,
+      allowNull: false,
+    },
+   
   },
   {
     sequelize,

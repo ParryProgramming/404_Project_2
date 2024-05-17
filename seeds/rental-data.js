@@ -37,18 +37,7 @@ const rentalData = [
     car_id: 9,
     user_id: 9,
   },
-  {
-    car_id: 10,
-    user_id: 10,
-  },
-  {
-    car_id: 12,
-    user_id: 12,
-  },
-  {
-    car_id: 13,
-    user_id: 13,
-  },
+
 ];
 
 const seedRentals = () => Rental.bulkCreate(rentalData);
