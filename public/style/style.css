@@ -210,13 +210,13 @@ nav {
     color: white;
 }
 
-#loginBtn, #signUpBtn{
+#loginBtn, #signUpBtn, #reserveBtn{
     background-color: gold;
     color: black;
     border:none;
 }
 
-#loginBtn:hover, #signUpBtn:hover {
+#loginBtn:hover, #signUpBtn:hover, #reserveBtn:hover {
     background-color: black;
     color: gold;
 }
