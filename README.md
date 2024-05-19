@@ -146,14 +146,16 @@ See LICENSE.txt for more information.
 
 [Alberto Lawant](https://github.com/ParryProgramming)
 
-
+-
 Project Links:
 
 
 [Github Repository](https://github.com/ParryProgramming/404_Project_2)
 
 
+
 [Live on Render](https://four04-project-2.onrender.com/)
+
 
 
 ## Acknowledgments
